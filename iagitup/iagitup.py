@@ -180,7 +180,7 @@ def upload_ia(gh_repo_folder, gh_repo_data, custom_meta=None):
     title = '%s' % (itemname)
 
     #initializing the main metadata
-    meta = dict(mediatype=mediatype, creator=uploader_name, collection=collection, title=title, year=year, date=date, \
+    meta = dict(mediatype=mediatype, creator=uploader_name, collection=collection, title=title, year=str(year), date=date, \
            subject=subject, uploaded_with=uploader, originalurl=originalurl, pushed_date=raw_pushed_date, description=description)
 
     # override default metadata with any supplemental metadata provided.
